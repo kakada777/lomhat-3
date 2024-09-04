@@ -1,0 +1,768 @@
+.body{
+    background-color: rgb(196, 195, 195);
+} 
+.container-fluid{ 
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 1px 10px black;
+    background-color: white;
+}
+.nav-bar{
+    height: 50px;
+    margin-bottom: 10px;   
+}
+.nav-bar ul{
+    width: 100%;
+    height: 75px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+}
+.nav-bar ul li {
+    width: 100px;
+    height: 45px;
+    color: rgb(13, 13, 13);
+
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: rgb(10, 10, 10);
+}
+.nav-bar ul li a:hover{
+
+    border-bottom: 2px solid black;
+}
+@media (max-width:650px) {
+    .nav-bar ul{
+        width: 100%;
+        height: 50px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100px;
+        display: none;
+    }
+    .nav-bar .lol{
+        height: 40px;
+        position: absolute;
+        top: 5px;
+        right: 100px;
+        display: none;
+    }
+    
+}
+.nav-bar i{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+}
+.nav-bar .lol{
+    
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 40px;
+}
+@media (min-width:650px) {
+
+    .nav-bar i{
+        display: none;
+    }
+    
+}
+.nav-bar ul li ul{
+    width: 140px;
+    height: 140px;
+    display: block;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    margin-left: 5px;
+    display: none;
+}
+.nav-bar ul li:hover ul{
+    display: block;
+}
+.nav-bar .in-ul li {
+    padding: 10px 0px 0px;    
+}
+.nav-bar .in-ul li a{
+    margin-left: -20px;
+    
+}
+/* nav-bar2 */
+.main-navbar2{
+    width: 100%;
+    height: 100%;
+}
+.main-navbar2 .nav-bar2{
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    display: none;
+    background-color: white;
+    
+}
+.nav-bar2 ul{
+    width: 100%;
+    list-style-type: none;
+    padding: 20px;
+    
+}
+.nav-bar2 ul li {
+     color: black;
+     padding-left: 20px;
+     padding-bottom: 15px;
+
+}
+.nav-bar2 ul li a{
+    text-decoration: none;
+     color: black;
+}
+.nav-bar2 ul li a:hover{
+     color: blue;
+}
+.nav-bar2 .btn{
+    margin-left: 30px;
+    margin-top: -40px;
+}
+.nav-bar2 .in-ul-2{
+    width: 120px;
+    height: 145px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+    position: absolute;
+    top: 105px;
+    right: 205px;
+    margin-left: 5px;
+    display: none;
+}
+
+.nav-bar2 .in-ul-2 li {
+   width: 110px;
+   margin-left: -5px;
+}
+.nav-bar2 .in-ul-2 li a{
+    color: black;
+}
+.nav-bar2 .in-ul-2 li a:hover{
+    color: blue;
+}
+/* container2 */
+.container2{
+    width: 100%;
+    height: 420px;
+    box-shadow: 1px 1px 10px rgb(97, 96, 96);
+    background-color: white;    
+}
+.box-right img{
+    width: 350px;
+    position: relative;
+    top: -20px;
+}
+@media (max-width:800px) {
+    .container2{
+        width: 100%;
+        height: 400px;
+        box-shadow: 1px 1px 10px rgb(113, 112, 112);
+    }
+    .box-right img{
+        width: 250px;
+    }
+    .row .box-left{
+        margin-top: -100px;
+    }
+}
+.container2 .row{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2 .box-left{
+  width: 40%;  
+  margin-left: 1px;
+}
+.container2 .box-left .btn{
+    width: 150px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 10px black;
+}
+.container2 .box-left .btn:hover{
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgb(241, 31, 31);
+}
+
+.container2 .box-right{
+    width:  40%;
+    height: 400px;
+
+}
+@media (min-width:1200px) {
+    .box-right img{
+        width: 100%;
+        display: none;
+    }
+}
+.container2 .box-right .img1{
+    width: 400px;
+    height: 470px;
+    margin-top: -80px;
+    margin-left: 100px;
+
+}
+.container2 .box-right .img3{
+    width: 500px;
+    height: 550px;
+    margin-top: -50px;
+    margin-left: 80px;
+}
+@media (max-width:1200px) {
+    .slide{
+        display: none;
+    }
+}
+/* About */
+.about{
+    width: 65%;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    background-color: rgb(244, 244, 244);
+}
+.about h1,p{
+    padding-top: 10px;
+    margin-left: 20px;
+}
+.about .btn{
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+.about .btn:hover{
+    transform: scale(0.9);
+    box-shadow: 1px 1px 11px red;
+    background-color: red;
+    color: white;
+}
+.about .star{
+    margin-left: 30px;
+}
+#about{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.about2{
+    width: 65%;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    background-color: rgb(244, 244, 244);
+    margin-bottom: 10px;
+    
+}
+.about2 h1,p{
+    padding-top: 10px;
+    margin-left: 20px;
+}
+.star .check{
+    color: orange;
+}
+
+.about2 .btn{
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+.about2 .btn:hover{
+    transform: scale(0.9);
+    box-shadow: 1px 1px 11px red;
+    color: white;
+    background-color: red;
+}
+.check1 {
+    color: black; /* Default color */
+    cursor: pointer; /* Make it clear that it’s clickable */
+}
+
+.check1.orange {
+    transition: 0.5s;
+    color: orange; /* Color when .orange class is added */
+} 
+/* main-box */
+.head-box{
+    width: 100%;
+    height: 420px;
+    margin-top: 50px;
+   
+}
+@media (max-width:1000px) {
+    .head-box{
+        width: 100%;
+        height: 530px;
+       
+    }
+}
+@media (max-width:820px) {
+    .head-box{
+        width: 100%;
+        height: 630px;
+       
+    }
+}
+@media (max-width:390px) {
+    .head-box{
+        width: 100%;
+        height: 1000px;
+       
+    }
+}
+.topsell{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(15, 14, 14);
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal; */
+      
+}
+.main-box{
+    width: 100%;
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.main-box .box-1{
+    width: 230px;
+    height: 230px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px 5px 15px black;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.box-1 img{
+    width: 100px;
+    transition: 0.5s;
+}
+.box-1 h1{
+    font-size: 15px;
+    color: orange;
+    margin-top: -30px;
+    margin-left: 130px;
+    display: none;
+}
+.box-1 p{
+    font-size: 7px;
+    margin-top: -20px;
+    display: none;
+}
+.star-1 i{
+    display: none;
+}
+.star-1 .check{
+    color: orange;
+}
+.check-1 {
+    color: black; /* Default color */
+    cursor: pointer; /* Make it clear that it’s clickable */
+}
+
+.check-1.orange-1 {
+    transition: 0.5s;
+    color: orange; /* Color when .orange class is added */
+}
+.box-1 .helo{
+    width: 150px;
+    height: 30px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    display: none;
+    transition: 0.7s;
+    margin-top: -20px;
+    
+}
+.box-1 .helo:hover{
+    box-shadow:  0px 1px 5px 4px rgb(239, 86, 72);
+    color: white;
+    background-color: rgb(237, 6, 6);
+
+}
+.box-1 .star-1{
+    font-size: 13px;
+    margin-left: -120px;
+}
+.container-2{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center; 
+}
+.container-2 h1{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.container-2 .gender .btn{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right:30px;
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+.container-2 .gender .btn:hover{
+    background-color: rgb(244, 51, 51);
+    color: rgb(247, 245, 245);
+    box-shadow: 1px 1px 10px red;
+    transform: scale(0.9);
+}
+/* new collection */
+.main-box2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child-box1{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(240, 239, 239);
+    border-radius: 20px;
+    text-align: center;
+
+}
+.child-box1 h1{
+    font-size: 25px;
+}
+.child-box1 h2{
+    font-size: 20px;
+    color:  rgb(235, 142, 20);
+}
+.child-box1 img{
+    width: 150px;
+    height: 160px;
+}
+.child-box1 .btn{
+    border-radius: 17px;
+    cursor: pointer;
+    background-color: rgb(235, 142, 20);
+    transition: 1s ;
+}
+.child-box1 .btn:hover{
+    transform: scale(1.1);
+    box-shadow:  0px 1px 5px 4px rgb(239, 86, 72);
+    color: white;
+    background-color: rgb(237, 6, 6);
+}
+.child-box1 i{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.child-box1 i:hover{
+    color: red;
+}
+.heart{
+    cursor: pointer;
+    color:black;
+}
+.heart.red{
+    color: red;
+}
+/* customer */
+.h1-customer{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+.container .customer{
+    justify-content: space-between;
+}
+
+.customer .customer-2{
+    width: 47%;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+    margin:30px 0px;
+    background-color: rgb(230, 223, 223);
+    
+}
+.customer-2 .img-customer img{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+}
+.customer-2 .write-customer .fa-star{
+    font-size: 15px;
+    margin: 10px;
+    margin-left: 10px;
+    color: orange;
+}
+.customer-2 .write-customer .p-1{
+    width: 100%;
+    margin-left: -10px;
+    margin-top: 5px;
+    
+}
+.customer-2 .write-customer .btn{
+    width: 150px;
+   margin-left: 240px;
+   margin-top: -10px;
+   margin-bottom: 10px;
+   transition: 0.5s;
+}
+.customer-2 .write-customer .btn:hover{
+    transform: scale(1.1);
+}
+@media (max-width:1300px) {
+    .container .customer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .customer .customer-2{
+        width: 90%;
+        background-color: rgb(230, 223, 223);
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px black;
+        margin-top: 20px;
+    }
+    .customer-2 .img-customer img{
+        width: 150px;
+        height: 150px;
+        margin-top: 35px;
+    }
+    .customer-2 .write-customer .fa-star{
+        font-size: 15px;
+        margin: 10px;
+        margin-left: 10px;
+        color: orange;
+    }
+    .customer-2 .write-customer .p-1{
+        width: 100%;
+       
+        margin-top: 5px;
+    }
+    .customer-2 .write-customer .p-2{
+        width: 100%;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    .customer-2 .write-customer .btn{
+       width: 150px;
+       margin-left: 20px;
+       margin-top: -10px;
+       margin-bottom: 10px;
+    }
+}
+
+.main-pic{
+    width: 100%;
+    margin: 30px 0px;
+}
+.main-pic .picture-right {
+    width: 100%;
+    height: 425px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.main-pic .picture-right:hover{
+    transform: scale(0.9);
+}
+.main-pic .picture-right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+.main-pic .picture-right h1{
+    width: 100%; 
+    margin-top: -70px;
+    margin-left: 10px;
+}
+.main-pic .picture-left{
+    width: 100%;
+    height: 415px;
+    margin-left: 10px;
+}
+.main-pic .picture-left{
+    width: 100%;
+}
+.img-picture-top{
+    transition: 0.5s;
+}
+.img-picture-top:hover{
+    transform: scale(0.9);
+}
+.img-picture-top img{
+    width: 100%;
+    height: 210px;
+    border-radius: 20px;
+}
+.img-picture-top:hover{
+    transform: scale(0.9);
+}
+.img-picture-top h1{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    position: relative;
+    top: -40px;   
+}
+.img-picture-bottom{
+    transition: 0.5s;
+    margin-top: -30px;
+}
+@media (min-width:1500px) {
+    .img-picture-bottom{
+        transition: 0.5s;
+        margin-top: -30px;
+    }
+}
+.img-picture-bottom:hover{
+    transform: scale(0.9);
+}
+.img-picture-bottom img{
+    width: 100%;
+    height: 205px;
+    border-radius: 20px;
+}
+.img-picture-bottom h1{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    position: relative;
+    top: -40px;
+}
+/* fulter */
+.main-box-10{
+    height:420px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.box-0{
+    height: 380px;
+    color: rgb(131, 117, 117);
+    text-align: center;
+    background-color: black;
+}
+.box-0 img{
+  
+    height: 50px;
+    margin: 10px;
+    border-radius: 15px ;
+}
+.box-0 p{
+    margin-top: 15px;
+    font-size: 15px;
+}
+.box-0 .img-QR{
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+
+}
+.box-10{
+    color: rgb(131, 117, 117);
+    background-color: black;
+}
+.box-10 h1{
+    font-size: 30px;
+    padding:20px 0px 0px 30px ;
+}
+.box-10 p{
+    font-size: 15px;
+    padding:20px 0px 0px 30px ;
+}
+
+.box-20{
+
+    font-size: 20px;
+    color: rgb(131, 117, 117);
+    background-color: rgb(4, 4, 4);
+}
+.box-20 h1{
+    font-size: 30px;
+    margin-left: -15px;
+    padding:20px 0px 0px 30px ;
+}
+.box-20 i{
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.fa-youtube:hover{
+    transform: scale(1.2);
+    color: red;
+}
+.fa-facebook:hover{
+    transform: scale(1.2);
+    color: rgb(21, 21, 202);
+}
+.fa-telegram:hover{
+    transform: scale(1.2);
+    color: rgb(20, 113, 199);
+}
+.fa-tiktok:hover{
+    transform: scale(1.2);
+    color: rgb(86, 86, 90);
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+    color: rgb(228, 58, 163);
+}
+.box-20 h2{
+    color: white;
+    margin-top: 30px;
+    font-size: 25px;
+    margin-left: -20px;
+    padding:20px 0px 0px 30px ;
+}
+.box-20 p{
+    padding:0px 0px 0px 30px ;
+}
+
+

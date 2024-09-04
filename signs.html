@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/sign.css">
+</head>
+<body>
+  <nav class="container-fluid  sticky-top">
+    <div class="nav-bar d-flex">
+      <h2>MYACC</h2>
+      <ul >
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="">Menu</a>
+        </li>
+        <li>
+          <a href="">Search</a>
+        </li>
+      </ul>
+      <a href="./signs.html" class="lol btn btn-outline-primary">Signs</a>
+      <i class="fa-solid fa-bars"></i>
+    </div>
+      <div class="main-navbar2">
+        <div class="nav-bar2 ">
+          <ul class="ul">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="">Menu</a>
+            </li>
+            <li>
+              <a href="">Search</a>
+            </li>
+          </ul>
+          <a href="./signs.html" class="btn btn-outline-primary">Signs</a>
+        </div>
+      </div>
+  </nav>
+      <div class="container signs">
+        <div class="box-signs">
+          <h1 >Sign In</h1>
+              <label for="" >Log in</label>
+              <input type="text" class="form-control" name=""  placeholder="email">
+              <input type="password" class="form-control" name="" id="password" placeholder="password">
+              <img src="./open-eye.png" alt="" id="eyeicon" class="img">
+              <input type="checkbox" class="checkbox">Remember me 
+              <a href="#" >Forget password</a>
+              <button class="btn btn-primary" >Sign in</button>
+              <h4>or</h4>
+              <div class="facebook ">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <h5>Login with Face Book</h5>
+              </div>
+              <div class="email ">
+                <i class="fa-solid fa-envelope"></i>
+                <h5>Login with Email</h5>
+              </div>
+        </div>
+      </div>
+</body>
+<script>
+    var password = document.getElementById("password");
+    var eyeicon = document.getElementById("eyeicon");
+
+    eyeicon.onclick = function(){
+      if(password.type=="password"){
+        password.type =" text";
+        eyeicon.src="open-eye.png";
+      }else{
+        password.type="password";
+        eyeicon.src="close-eye.png";
+      }
+    }
+    var navBar2 = document.querySelector(".nav-bar2");
+    var faSolid = document.querySelector(".fa-solid");
+    
+      faSolid.onclick = function() {
+        if (navBar2.style.display === "none" || navBar2.style.display === "" ) {
+          navBar2.style.display = "block";
+        }else {
+          navBar2.style.display = "none";
+        }
+      }
+      navBar2.addEventListener("mouseleave",function(){
+       navBar2.style.display = "none";
+      })
+</script>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY ACC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/shoes.css">
+</head>
+<body>
+    <nav class="container-fluid  sticky-top">
+      <div class="nav-bar d-flex">
+        <h2>MYACC</h2>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="">Menu</a>
+            <ul class="in-ul">
+              <li>
+                <a href="./shoes.html">Shoes</a>
+              </li>
+              <li>
+                <a href="">Shoes</a>
+              </li>
+              <li>
+                <a href="">Shoes</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Search</a>
+          </li>
+        </ul>
+        <a href="./signs.html" class="lol btn btn-outline-primary">Signs</a>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="main-navbar2">
+        <div class="nav-bar2 ">
+          <ul class="ul">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="" class="menu-2">Menu</a>
+              <ul class="in-ul-2">
+                <li>
+                  <a href="./shoes.html">Shoes</a>
+                </li>
+                <li>
+                  <a href="">Shoes</a>
+                </li>
+                <li>
+                  <a href="">Shoes</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Search</a>
+            </li>
+          </ul>
+          <a href="./signs.html" class="btn btn-outline-primary">Signs</a>
+        </div>
+      </div>
+    </nav>
+
+    <input type="text" class="form-control mt-3 mx-auto w-50" id="myinput" placeholder="live Searching">
+    <div class="container">
+      <h3 class="text-danger mt-5 text-center " id="para" style="display: none;">Not Found</h3>
+      <div class="row mt-3 " id="card">
+          
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign-in</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <label for="">ID</label>
+              <input type="text" placeholder="ID" class="form-control">
+              <label for="">Name</label>
+              <input type="text" placeholder="Name" class="form-control">
+              <label for="">Email</label>
+              <input type="text" placeholder="Email" class="form-control">
+              <label for="">Password</label>
+              <input type="password" placeholder="Enter Password" id="password" class="form-control">
+              <img  src="./img/close-eye.png" id="eyeicon">
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Loign</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="./script/shoes.js"></script>
+<script>
+  var navBar2 = document.querySelector(".nav-bar2");
+  var faSolid = document.querySelector(".fa-solid");
+  var Menu2 = document.querySelector(".menu-2");
+  var inUi2 = document.querySelector(".in-ul-2");
+  
+    faSolid.onclick = function() {
+      if (navBar2.style.display === "none" || navBar2.style.display === "" ) {
+        navBar2.style.display = "block";
+      }else {
+        navBar2.style.display = "none";
+        inUi2.style.display = "none";
+      }
+    }
+    Menu2.addEventListener("mouseenter",function() {
+        inUi2.style.display = "block";
+    });
+    inUi2.addEventListener("mouseleave",function() {
+      inUi2.style.display = "none";
+    })
+    inUi2.addEventListener("mouseleave",function() {
+      inUi2.style.display = "none";
+      navBar2.addEventListener("mouseleave",function(){
+        inUi2.style.display = "none";
+      navBar2.style.display = "none";
+    })
+    });
+</script>
+</head>
