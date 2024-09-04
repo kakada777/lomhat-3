@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: none;
+}
 .body{
     background-color: rgb(196, 195, 195);
 } 
@@ -35,6 +40,10 @@
     border-bottom: 2px solid black;
 }
 @media (max-width:650px) {
+    .nav-bar{
+        height: 50px;
+        margin-bottom: 10px;   
+    }
     .nav-bar ul{
         width: 100%;
         height: 50px;
@@ -42,8 +51,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: -100px;
         display: none;
+    }
+    .nav-bar ul li {
+        width: 100px;
+        height: 45px;
+        color: rgb(13, 13, 13);
+    
     }
     .nav-bar .lol{
         height: 40px;
@@ -68,7 +82,6 @@
     right: 40px;
 }
 @media (min-width:650px) {
-
     .nav-bar i{
         display: none;
     }
@@ -97,10 +110,7 @@
     
 }
 /* nav-bar2 */
-.main-navbar2{
-    width: 100%;
-    height: 100%;
-}
+
 .main-navbar2 .nav-bar2{
     width: 200px;
     border-radius: 5px;
@@ -166,9 +176,10 @@
     background-color: white;    
 }
 .box-right img{
-    width: 350px;
+    width: 100%;
     position: relative;
     top: -20px;
+    
 }
 @media (max-width:800px) {
     .container2{
@@ -177,7 +188,7 @@
         box-shadow: 1px 1px 10px rgb(113, 112, 112);
     }
     .box-right img{
-        width: 250px;
+        width: 100%;
     }
     .row .box-left{
         margin-top: -100px;
@@ -185,7 +196,7 @@
 }
 @media (max-width:490px){
     .box-right img{
-        width: 200px;
+        width: 100%;
     }
 }
 .container2 .row{
@@ -205,6 +216,15 @@
     background-color: black;
     color: white;
     box-shadow: 1px 1px 10px black;
+}
+@media (min-width:490px) {
+    .container2 .box-left .btn{
+        width: 150px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        box-shadow: 1px 1px 10px black;
+    }
 }
 .container2 .box-left .btn:hover{
     border-radius: 20px;
@@ -227,7 +247,6 @@
     height: 470px;
     margin-top: -80px;
     margin-left: 100px;
-
 }
 .container2 .box-right .img3{
     width: 500px;
@@ -426,6 +445,7 @@
 .box-1 .star-1{
     font-size: 13px;
     margin-left: -120px;
+    
 }
 .container-2{
     width: 100%;
@@ -585,7 +605,6 @@
     }
     .customer-2 .write-customer .p-1{
         width: 100%;
-       
         margin-top: 5px;
     }
     .customer-2 .write-customer .p-2{
