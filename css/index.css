@@ -107,7 +107,6 @@
     
 }
 /* nav-bar2 */
-
 .main-navbar2 .nav-bar2{
     width: 200px;
     border-radius: 5px;
@@ -146,6 +145,8 @@
     width: 120px;
     height: 145px;
     border-radius: 5px;
+    background-color:white;
+    box-shadow: 1px 1px 10px black;
     position: absolute;
     top: 105px;
     right: 205px;
